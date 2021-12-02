@@ -1,0 +1,35 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    @include flexCenter();
+}
+.whole-container{
+    border: solid 1px red
+}
+.score-container{
+    @include flexCenter();
+    flex-direction: column;
+}
+
+.question-container{
+    padding: 1em;
+}
+
+.answer{
+    cursor: pointer;
+    padding: 0 1em 0 1em;
+    display: flex;
+
+    p{
+        padding: 1em;
+        border: solid 1px red;
+    }
+    .res{
+        width: 100%;
+    }
+}
