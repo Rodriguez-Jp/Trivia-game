@@ -7,7 +7,6 @@ fetch(apiUrl).then((response) => response.json().then((qs) => {
         qs.results[0].question
     ]
 
-    alert(answers);
 }))
 
 
