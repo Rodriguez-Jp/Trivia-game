@@ -114,7 +114,8 @@ startGame = () =>{
 getNewQuestion= () => {
 
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
-        return window.location.assign('/end.html');
+        localStorage.setItem('score', `${score}`);
+        return window.location.assign('./endPage.html');        
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -158,8 +159,8 @@ getNewQuestion= () => {
                     
                     
                  //Functionality of the progress bar
+                 const progressBar = document.querySelector('.progress');
                  let percentage = 100 - ((availableQuestions.length / MAX_QUESTIONS) * 100); 
-                 console.log(percentage)
                  progressBar.style.width = `${percentage}%`;
 
 
@@ -167,12 +168,7 @@ getNewQuestion= () => {
 
                  getNewQuestion();
 
-            }, 800)
-
-            const progressBar = document.querySelector('.progress');
-
-
-
+            }, 800)            
 
         })
         

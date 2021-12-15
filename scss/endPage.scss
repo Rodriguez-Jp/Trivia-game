@@ -1,0 +1,97 @@
+@import 'variables';
+
+
+
+body{
+    background-image: $bg-image;
+    height: 100vh;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+
+.whole-container{
+    @include flexCenter();
+    flex-direction: column;
+    height: 100%;
+}
+
+.score-container{
+    @include flexCenter();
+    flex-direction: column;
+
+    .title::first-letter{
+        color: $blue;
+    }
+}
+
+.user-info-container{
+    border: solid 2px #000;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    height: 15rem;
+    @include flexCenter();
+    flex-direction: column;
+
+    .button-container{
+        @include flexCenter();
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    a{
+        padding: 0.5em;
+        margin-top: 10px;
+        
+        width: 5em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+
+        i{
+            margin-left: 0.3em;
+        }
+    }
+
+    input{
+        padding: 0.8em;
+        border: solid 1px $blue;
+        border-radius: 10px;
+
+        &::placeholder{
+            color: rgb(0, 0, 0);
+        }
+        
+    }
+}
+
+.save-btn{
+    background-color: $blue;
+    color: #fff;
+    transition: transform 200ms;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.home-btn{
+    background-color: #000;
+    color: #fff;
+    transition: transform 200ms;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    &::first-letter{
+        color: $blue;
+    }
+
+    i{
+        color: $blue;
+    }
+}
