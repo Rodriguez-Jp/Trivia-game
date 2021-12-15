@@ -1,0 +1,126 @@
+@import 'variables.scss';
+
+
+body{
+    height: 100vh;
+    @include flexCenter();
+    background-color: #ffffff;
+    background-image: $bg-image;
+    font-family: monospace;
+
+}
+.whole-container{
+    width: 90%;
+    margin: 10px;
+    background-color: #fff;
+    border: #eee solid 1px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0 , 0.4);
+
+    .question{
+        text-align: center;
+        font-size: 1.5rem
+    }
+    
+}
+.score-container{
+    @include flexCenter();
+    flex-direction: column;
+
+    h2{
+        font-size: 2.5em;
+        color: $blue;
+    }
+
+    .score{
+        font-size: 2.8em;
+        color: $blue;
+    }
+}
+
+.question-container{
+    padding: 1em;
+}
+
+.answer{
+    cursor: pointer;
+    padding: 0 1em 0 1em;
+    display: flex;
+    transition: transform 200ms ease-out;
+    width: 93%;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+    
+
+    p{
+        padding: 1em;
+        box-shadow: 3px 2px 2px rgba(0, 0, 0 , 0.2);
+    }
+    .res{
+        width: 100%;
+        font-size: 1rem;
+        word-wrap: break-word;
+        transition: background 500ms;
+    }
+
+    .letter{
+        background-color: $blue;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.game-info{
+    margin-top: 2em;
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    
+    span{
+        font-size: 1.6rem;
+    }
+    .question-text::first-letter{
+        color: $blue;
+    }
+    
+}
+
+.progress-bar{
+    width: 60%;
+    height: 1.5em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 1em;
+
+    .progress{
+        background-color: $blue;
+        width: 0%;
+        height: 1.5em;
+        transition: width 500ms;
+    }
+}
+
+/* Classes for correct/incorrect answers */
+
+.correct{
+    background-color: rgb(118, 209, 90);
+}
+
+.incorrect{
+    background-color: rgb(196, 26, 26);
+}
+
+/* Media querie for desktop */
+
+@media (min-width:1024px) {
+
+    body{
+        height: 70%;
+    }
+    .whole-container{
+        width: 40%;
+    }
+    
+}
