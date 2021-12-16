@@ -94,6 +94,7 @@ const question = document.querySelector('.question');
 const choices = Array.from(document.querySelectorAll('.res'));
 const scoreText = document.querySelector('.score');
 
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -114,7 +115,7 @@ startGame = () =>{
 getNewQuestion= () => {
 
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
-        localStorage.setItem('score', `${score}`);
+        localStorage.setItem('score', `${JSON.stringify(score)}`);
         return window.location.assign('./endPage.html');        
     }
     questionCounter++;

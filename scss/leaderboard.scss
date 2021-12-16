@@ -1,0 +1,51 @@
+@import 'variables';
+
+
+
+body{
+    background-image: $bg-image;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 1.2rem
+}
+
+.whole-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 0px rgba($color: #000000, $alpha: 0.7);
+}
+
+.users-container{
+    width: 100%;
+    .table{
+        padding: 1em;
+        width: 100%;
+    }
+
+    .headings th{
+        padding: 0.8em;
+        
+    }
+}
+
+h1{
+    &::first-letter, i{
+        color: $blue;
+    }
+}
+
+.home-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: $blue;
+    padding: 0.8em;
+    border-radius: 10px;
+
+    i{
+        margin-left: 0.4em;
+    }
+}

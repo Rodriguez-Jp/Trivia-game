@@ -1,0 +1,54 @@
+body {
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2368c8f7' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  height: 100vh;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.whole-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+.users-container {
+  width: 100%;
+}
+
+.users-container .table {
+  padding: 1em;
+  width: 100%;
+}
+
+.users-container .headings th {
+  padding: 0.8em;
+}
+
+h1::first-letter, h1 i {
+  color: #09f;
+}
+
+.home-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #09f;
+  padding: 0.8em;
+  border-radius: 10px;
+}
+
+.home-btn i {
+  margin-left: 0.4em;
+}
+/*# sourceMappingURL=leaderboard.css.map */
