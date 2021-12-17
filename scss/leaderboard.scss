@@ -44,8 +44,30 @@ h1{
     background-color: $blue;
     padding: 0.8em;
     border-radius: 10px;
+    transition: transform 200ms;
 
     i{
         margin-left: 0.4em;
+    }
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.clear-btn{
+    background-color: #000000;
+    color: #fff;
+    padding: 0.8em;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1em;
+    border: none;
+    transition: transform 200ms;
+    cursor: pointer;
+
+
+    &:hover{
+        transform: scale(1.02);
     }
 }

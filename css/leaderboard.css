@@ -46,9 +46,38 @@ h1::first-letter, h1 i {
   background-color: #09f;
   padding: 0.8em;
   border-radius: 10px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
 }
 
 .home-btn i {
   margin-left: 0.4em;
+}
+
+.home-btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.clear-btn {
+  background-color: #000000;
+  color: #fff;
+  padding: 0.8em;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 1em;
+  border: none;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*# sourceMappingURL=leaderboard.css.map */
