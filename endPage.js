@@ -10,8 +10,7 @@ if (highScoresRaw === 'undefined' || highScoresRaw === null ){
       scoreList = JSON.parse(highScoresRaw);
 }
 
-console.log(localStorage.getItem('HighScores'));
-console.log(scoreList);
+
 
 //Display the score on the end page
 const totalScore = localStorage.getItem('score');
@@ -36,7 +35,6 @@ saveBtn.addEventListener('click', () => {
     saveBtn.style.opacity = '0.7';
 
     scoreList.push(addUser);
-    console.log(scoreList);
     localStorage.setItem('HighScores', JSON.stringify(scoreList));
 
 })

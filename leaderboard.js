@@ -30,7 +30,6 @@ for (let i = 0; i < scoreList.length; i++){
     tr.appendChild(thName);
     tr.appendChild(thScore);
     table.appendChild(tr);
-    console.log(tr, thName)
 }
 
 
