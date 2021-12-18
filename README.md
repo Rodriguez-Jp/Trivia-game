@@ -2,4 +2,4 @@
 A Quiz trivia game using HTML, SASS and JavaScript
 
 ## Live link!
-https://rodriguez-jp.github.io/Trivia-game/
+https://quizapp-olive.vercel.app/
